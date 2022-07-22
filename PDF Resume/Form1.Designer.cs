@@ -46,6 +46,7 @@
             this.labelContacts = new System.Windows.Forms.Label();
             this.buttonReadFile = new System.Windows.Forms.Button();
             this.buttonConvert = new System.Windows.Forms.Button();
+            this.labelCovert = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label
@@ -195,19 +196,33 @@
             // 
             // buttonConvert
             // 
-            this.buttonConvert.Location = new System.Drawing.Point(435, 97);
+            this.buttonConvert.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.buttonConvert.Location = new System.Drawing.Point(434, 84);
             this.buttonConvert.Name = "buttonConvert";
-            this.buttonConvert.Size = new System.Drawing.Size(73, 24);
+            this.buttonConvert.Size = new System.Drawing.Size(79, 33);
             this.buttonConvert.TabIndex = 21;
             this.buttonConvert.Text = "Convert";
+            this.buttonConvert.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.buttonConvert.UseVisualStyleBackColor = true;
             this.buttonConvert.Click += new System.EventHandler(this.buttonConvert_Click);
+            // 
+            // labelCovert
+            // 
+            this.labelCovert.AutoSize = true;
+            this.labelCovert.Font = new System.Drawing.Font("Palatino Linotype", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelCovert.Location = new System.Drawing.Point(403, 47);
+            this.labelCovert.Name = "labelCovert";
+            this.labelCovert.Size = new System.Drawing.Size(135, 34);
+            this.labelCovert.TabIndex = 22;
+            this.labelCovert.Text = "Click the button to \r\nConvert into PDF FILE";
+            this.labelCovert.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(579, 749);
+            this.Controls.Add(this.labelCovert);
             this.Controls.Add(this.buttonConvert);
             this.Controls.Add(this.buttonReadFile);
             this.Controls.Add(this.textBoxContacts);
@@ -252,5 +267,6 @@
         private Label labelContacts;
         private Button buttonReadFile;
         private Button buttonConvert;
+        private Label labelCovert;
     }
 }

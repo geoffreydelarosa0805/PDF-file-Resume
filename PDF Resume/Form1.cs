@@ -30,13 +30,74 @@ namespace PDF_Resume
 
         private void buttonConvert_Click(object sender, EventArgs e)
         {
-            Document document = new Document(iTextSharp.text.PageSize.LETTER, 10, 10, 42, 35);
+            Document document = new Document(iTextSharp.text.PageSize.LETTER, 50, 50, 50, 50);
             PdfWriter write = PdfWriter.GetInstance(document, new FileStream(@"C:\Users\HP\Documents\Visual Studio 2022\PDF Resume\My Resume\DELA-ROSA_GEOFFREY.pdf", FileMode.Create));
             document.Open();
 
-            Paragraph prgh = new Paragraph("RESUME");
+            
+            Paragraph name = new Paragraph(textBoxName.Text);
+            name.Font.Size = 15f;
+            name.IndentationLeft = 0f;
+            name.Font.SetStyle("bold");
 
-            document.Add(prgh);
+            Paragraph spaceA = new Paragraph(" ");
+            Paragraph potn = new Paragraph(textBoxPosition.Text);
+
+            Paragraph spaceB = new Paragraph(" ");
+            Paragraph objtTitle = new Paragraph("Objectives");
+            objtTitle.Font.Size = 15f;
+            objtTitle.IndentationLeft = 0f;
+            objtTitle.Font.SetStyle("bold");
+
+            Paragraph spaceC = new Paragraph(" ");
+            Paragraph objt = new Paragraph(textBoxObjectives.Text);
+            Paragraph SkillsHeading = new Paragraph("Skills");
+            SkillsHeading.Font.Size = 15f;
+            SkillsHeading.IndentationLeft = 0f;
+            SkillsHeading.Font.SetStyle("bold");
+
+            Paragraph spaceD = new Paragraph(" ");
+            Paragraph skills = new Paragraph(textBoxSkills.Text);
+            Paragraph EducBG = new Paragraph("Educational Background");
+            EducBG.Font.Size = 15f;
+            EducBG.IndentationLeft = 0f;
+            EducBG.Font.SetStyle("bold");
+
+            Paragraph spaceE = new Paragraph(" ");
+            Paragraph EBG = new Paragraph(textBoxEducBG.Text);
+            Paragraph Achvmt = new Paragraph("Recognitions");
+            Achvmt.Font.Size = 15f;
+            Achvmt.IndentationLeft = 0f;
+            Achvmt.Font.SetStyle("bold");
+
+            Paragraph spaceF = new Paragraph(" ");
+            Paragraph Recog = new Paragraph(textBoxAchvmts.Text);
+            Paragraph Cont = new Paragraph("Contacts");
+            Cont.Font.Size = 15f;
+            Cont.IndentationLeft = 0f;
+            Cont.Font.SetStyle("bold");
+            Paragraph Contacts = new Paragraph(textBoxContacts.Text);
+
+                       
+            document.Add(name);
+            document.Add(spaceA);
+            document.Add(potn);
+            document.Add(spaceB);
+            document.Add(objtTitle);
+            document.Add(objt);
+            document.Add(spaceC);
+            document.Add(SkillsHeading);
+            document.Add(skills);
+            document.Add(spaceD);
+            document.Add(EducBG);
+            document.Add(EBG);
+            document.Add(spaceE);
+            document.Add(Achvmt);
+            document.Add(Recog);
+            document.Add(spaceF);
+            document.Add(Cont);
+            document.Add(Contacts);       
+
             document.Close();
         }
     }
