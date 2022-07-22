@@ -27,5 +27,17 @@ namespace PDF_Resume
             textBoxContacts.Text = resume.Address + "\r\n" + resume.ContactNumber + "\r\n" + resume.EmailAddress + "\r\n" + resume.Facebook;
 
         }
+
+        private void buttonConvert_Click(object sender, EventArgs e)
+        {
+            Document document = new Document(iTextSharp.text.PageSize.LETTER, 10, 10, 42, 35);
+            PdfWriter write = PdfWriter.GetInstance(document, new FileStream(@"C:\Users\HP\Documents\Visual Studio 2022\PDF Resume\My Resume\DELA-ROSA_GEOFFREY.pdf", FileMode.Create));
+            document.Open();
+
+            Paragraph prgh = new Paragraph("RESUME");
+
+            document.Add(prgh);
+            document.Close();
+        }
     }
 }

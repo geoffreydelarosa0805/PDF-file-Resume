@@ -21,3 +21,5 @@ C:\Users\HP\Documents\Visual Studio 2022\PDF Resume\PDF Resume\obj\Debug\net6.0-
 C:\Users\HP\Documents\Visual Studio 2022\PDF Resume\PDF Resume\obj\Debug\net6.0-windows\PDF Resume.pdb
 C:\Users\HP\Documents\Visual Studio 2022\PDF Resume\PDF Resume\obj\Debug\net6.0-windows\PDF Resume.genruntimeconfig.cache
 C:\Users\HP\Documents\Visual Studio 2022\PDF Resume\PDF Resume\obj\Debug\net6.0-windows\ref\PDF Resume.dll
+C:\Users\HP\Documents\Visual Studio 2022\PDF Resume\PDF Resume\bin\Debug\net6.0-windows\BouncyCastle.Crypto.dll
+C:\Users\HP\Documents\Visual Studio 2022\PDF Resume\PDF Resume\bin\Debug\net6.0-windows\itextsharp.dll
