@@ -47,6 +47,7 @@
             this.buttonReadFile = new System.Windows.Forms.Button();
             this.buttonConvert = new System.Windows.Forms.Button();
             this.labelCovert = new System.Windows.Forms.Label();
+            this.labelTitle = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label
@@ -197,7 +198,7 @@
             // buttonConvert
             // 
             this.buttonConvert.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.buttonConvert.Location = new System.Drawing.Point(434, 84);
+            this.buttonConvert.Location = new System.Drawing.Point(479, 704);
             this.buttonConvert.Name = "buttonConvert";
             this.buttonConvert.Size = new System.Drawing.Size(79, 33);
             this.buttonConvert.TabIndex = 21;
@@ -210,18 +211,31 @@
             // 
             this.labelCovert.AutoSize = true;
             this.labelCovert.Font = new System.Drawing.Font("Palatino Linotype", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.labelCovert.Location = new System.Drawing.Point(403, 47);
+            this.labelCovert.Location = new System.Drawing.Point(218, 714);
             this.labelCovert.Name = "labelCovert";
-            this.labelCovert.Size = new System.Drawing.Size(135, 34);
+            this.labelCovert.Size = new System.Drawing.Size(238, 17);
             this.labelCovert.TabIndex = 22;
-            this.labelCovert.Text = "Click the button to \r\nConvert into PDF FILE";
+            this.labelCovert.Text = "Click the button to Convert into PDF FILE";
             this.labelCovert.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // labelTitle
+            // 
+            this.labelTitle.AutoSize = true;
+            this.labelTitle.Font = new System.Drawing.Font("Imprint MT Shadow", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelTitle.Location = new System.Drawing.Point(302, 47);
+            this.labelTitle.Name = "labelTitle";
+            this.labelTitle.Size = new System.Drawing.Size(222, 56);
+            this.labelTitle.TabIndex = 23;
+            this.labelTitle.Text = "Resume Converter\r\ninto PDF File";
+            this.labelTitle.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(579, 749);
+            this.AutoScroll = true;
+            this.ClientSize = new System.Drawing.Size(579, 643);
+            this.Controls.Add(this.labelTitle);
             this.Controls.Add(this.labelCovert);
             this.Controls.Add(this.buttonConvert);
             this.Controls.Add(this.buttonReadFile);
@@ -268,5 +282,6 @@
         private Button buttonReadFile;
         private Button buttonConvert;
         private Label labelCovert;
+        private Label labelTitle;
     }
 }
