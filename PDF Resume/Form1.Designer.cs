@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.buttonConvert = new System.Windows.Forms.Button();
             this.label = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBoxName = new System.Windows.Forms.TextBox();
@@ -45,17 +44,9 @@
             this.labelAchievements = new System.Windows.Forms.Label();
             this.textBoxContacts = new System.Windows.Forms.TextBox();
             this.labelContacts = new System.Windows.Forms.Label();
+            this.buttonReadFile = new System.Windows.Forms.Button();
+            this.buttonConvert = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // buttonConvert
-            // 
-            this.buttonConvert.Location = new System.Drawing.Point(29, 83);
-            this.buttonConvert.Name = "buttonConvert";
-            this.buttonConvert.Size = new System.Drawing.Size(73, 24);
-            this.buttonConvert.TabIndex = 0;
-            this.buttonConvert.Text = "Read File";
-            this.buttonConvert.UseVisualStyleBackColor = true;
-            this.buttonConvert.Click += new System.EventHandler(this.buttonConvert_Click);
             // 
             // label
             // 
@@ -192,11 +183,32 @@
             this.labelContacts.TabIndex = 18;
             this.labelContacts.Text = "Contacts :";
             // 
+            // buttonReadFile
+            // 
+            this.buttonReadFile.Location = new System.Drawing.Point(29, 83);
+            this.buttonReadFile.Name = "buttonReadFile";
+            this.buttonReadFile.Size = new System.Drawing.Size(73, 24);
+            this.buttonReadFile.TabIndex = 20;
+            this.buttonReadFile.Text = "Read File";
+            this.buttonReadFile.UseVisualStyleBackColor = true;
+            this.buttonReadFile.Click += new System.EventHandler(this.buttonReadFile_Click);
+            // 
+            // buttonConvert
+            // 
+            this.buttonConvert.Location = new System.Drawing.Point(435, 97);
+            this.buttonConvert.Name = "buttonConvert";
+            this.buttonConvert.Size = new System.Drawing.Size(73, 24);
+            this.buttonConvert.TabIndex = 21;
+            this.buttonConvert.Text = "Convert";
+            this.buttonConvert.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(579, 749);
+            this.Controls.Add(this.buttonConvert);
+            this.Controls.Add(this.buttonReadFile);
             this.Controls.Add(this.textBoxContacts);
             this.Controls.Add(this.labelContacts);
             this.Controls.Add(this.textBoxAchvmts);
@@ -213,7 +225,6 @@
             this.Controls.Add(this.labelInformation);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label);
-            this.Controls.Add(this.buttonConvert);
             this.Name = "Form1";
             this.Text = "Converting Resume into PDF";
             this.ResumeLayout(false);
@@ -222,8 +233,6 @@
         }
 
         #endregion
-
-        private Button buttonConvert;
         private Label label;
         private TextBox textBox1;
         private TextBox textBoxName;
@@ -240,5 +249,7 @@
         private Label labelAchievements;
         private TextBox textBoxContacts;
         private Label labelContacts;
+        private Button buttonReadFile;
+        private Button buttonConvert;
     }
 }

@@ -1,4 +1,7 @@
 using Newtonsoft.Json;
+using System.IO;
+using iTextSharp.text;
+using iTextSharp.text.pdf;
 
 namespace PDF_Resume
 {
@@ -9,7 +12,7 @@ namespace PDF_Resume
             InitializeComponent();
         }
 
-        private void buttonConvert_Click(object sender, EventArgs e)
+        private void buttonReadFile_Click(object sender, EventArgs e)
         {
             var JsonFile = @"C:\Users\HP\Documents\Visual Studio 2022\PDF Resume\My Resume\DELA-ROSA_GEOFFREY.json";
             String JsonInfo = File.ReadAllText(JsonFile);
