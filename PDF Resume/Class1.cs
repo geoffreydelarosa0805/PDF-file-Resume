@@ -11,7 +11,8 @@ namespace PDF_Resume
         public string Name { get; set; }
         public string Position { get; set; }
 
-        public string Objectives { get; set; }
+        public string Objective { get; set; }
+
         public string Skill1 { get; set; }
         public string Skill1Description { get; set; }
         public string Skill2 { get; set; }
